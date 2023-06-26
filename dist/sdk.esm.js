@@ -34,8 +34,8 @@ var Rounding;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(Rounding || (Rounding = {}));
 
-var FACTORY_ADDRESS = '0xdf5340e76d2bCe89668F633D095AB21587E3128D';
-var INIT_CODE_HASH = '0x92ef6da22857152070f5a36775fdd63bb261283443d86ae06cb4bb0756ed7de8';
+var FACTORY_ADDRESS = '0x326Ee96748E7DcC04BE1Ef8f4E4F6bdd54048932';
+var INIT_CODE_HASH = '0xcfeb1f8754759f0abe461dd409d6d501fdd73b91a848c483faa6db0faf53c3bdbytes32';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -757,7 +757,7 @@ var Pair = /*#__PURE__*/function () {
   function Pair(tokenAmountA, tokenAmountB) {
     var tokenAmounts = tokenAmountA.token.sortsBefore(tokenAmountB.token) // does safety checks
     ? [tokenAmountA, tokenAmountB] : [tokenAmountB, tokenAmountA];
-    this.liquidityToken = new Token(tokenAmounts[0].token.chainId, Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token), 18, 'B2', 'B2swap');
+    this.liquidityToken = new Token(tokenAmounts[0].token.chainId, Pair.getAddress(tokenAmounts[0].token, tokenAmounts[1].token), 18, 'Shdw-LP', 'Shadow LPs');
     this.tokenAmounts = tokenAmounts;
   }
 
