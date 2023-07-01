@@ -16,7 +16,8 @@ var _SOLIDITY_TYPE_MAXIMA;
 var ChainId;
 
 (function (ChainId) {
-  ChainId[ChainId["MAINNET"] = 1116] = "MAINNET";
+  ChainId[ChainId["MAINNET"] = 56] = "MAINNET";
+  ChainId[ChainId["TEST"] = 97] = "TEST";
 })(ChainId || (ChainId = {}));
 
 var TradeType;
@@ -434,7 +435,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0x191E94fa59739e188dcE837F7f6978d84727AD01', 18, 'WEETH', 'Wrapped ETH'), _WETH);
+var WETH = (_WETH = {}, _WETH[ChainId.MAINNET] = /*#__PURE__*/new Token(ChainId.MAINNET, '0x191E94fa59739e188dcE837F7f6978d84727AD01', 18, 'WEETH', 'Wrapped ETH'), _WETH[ChainId.TEST] = /*#__PURE__*/new Token(ChainId.TEST, '0x191E94fa59739e188dcE837F7f6978d84727AD01', 18, 'WEETH', 'Wrapped ETH'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
